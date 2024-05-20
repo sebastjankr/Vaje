@@ -21,7 +21,14 @@ public class TovornoVozilo {
     private double nosilnost;
     private String vrstaGoriva;
 
-	// Javna metoda, ki vrne znamko vozila, število prevoženih kilometrov, kapaciteto, nosilnost in vrsto goriva
+    /**
+     * Javna metoda, ki vrne znamko vozila, število prevoženih kilometrov, kapaciteto, nosilnost in vrsto goriva
+     * @param znamka znamka vozila
+     * @param prevozenih število prevoženih kilometrov
+     * @param kapaciteta kapaciteta tovornega vozila
+     * @param nosilnost nosilnost tovornega vozila
+     * @param vrstaGoriva vrsta goriva
+     */
     public TovornoVozilo(String znamka, int prevozenih, double kapaciteta, double nosilnost, String vrstaGoriva) {
         this.znamka = znamka;
         this.prevozenih = prevozenih;
@@ -30,27 +37,46 @@ public class TovornoVozilo {
         this.vrstaGoriva = vrstaGoriva;
     }
 
-	// Javna metoda, ki vrne znamko vozila
+    /**
+     * Javna metoda, ki vrne znamko vozila
+     * @return String getZnamka vrne znamko vozila
+     */
     public String getZnamka() {
         return znamka;
     }
 
-	// Javna metoda, ki vrne število prevoženih kilometrov
+	
+    /**
+     * Javna metoda, ki vrne število prevoženih kilometrov
+     * @return int getPrevozeno vrne število prevoženih kilometrov
+     */
     public int getPrevozeno() {
         return prevozenih;
     }
 
-	// Javna metoda, kapaciteto
+	
+    /**
+     * Javna metoda, ki vrne kapaciteto
+     * @return double getKapaciteta vrne kapaciteto
+     */
     public double getKapaciteta() {
         return kapaciteta;
     }
 
-	// Javna metoda, nosilnost
+	
+    /**
+     * Javna metoda, vrne vrsto gorivanosilnost
+     * @return double getNosilnost vrne vrsto gorivanosilnost
+     */
     public double getNosilnost() {
         return nosilnost;
     }
 
-	// Javna metoda, vrsto goriva
+	
+    /**
+     * Javna metoda, ki vrne vrsto goriva
+     * @return String getVrstaGoriva vrne vrsto goriva
+     */
     public String getVrstaGoriva() {
         return vrstaGoriva;
     }

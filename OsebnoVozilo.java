@@ -18,18 +18,30 @@ public class OsebnoVozilo {
 	private String znamka;
     private int prevozenih;
 
-	// Javna metoda, ki vrne znamko vozila in število prevoženih kilometrov
+    /**
+     * Javna metoda, ki vrne znamko vozila in število prevoženih kilometrov
+     * @param znamka znamka vozila
+     * @param prevozenih število prevoženih kilometrov
+     */
     public OsebnoVozilo(String znamka, int prevozenih) {
         this.znamka = znamka;
         this.prevozenih = prevozenih;
     }
 	
-	// Javna metoda, ki vrne znamko vozila
+	
+    /**
+     * Javna metoda, ki vrne znamko vozila
+     * @return String getZnamka vrne znamko vozila
+     */
     public String getZnamka() {
         return znamka;
     }
 
-	// Javna metoda, ki vrne število prevoženih kilometrov
+	
+    /**
+     * Javna metoda, ki vrne število prevoženih kilometrov
+     * @return int getPrevozeno vrne število prevoženih kilometrov
+     */
     public int getPrevozeno() {
         return prevozenih;
     }

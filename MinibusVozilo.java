@@ -20,7 +20,13 @@ public class MinibusVozilo {
     private int sedezi;
     private String vrstaGoriva;
 
-	// Javna metoda, ki vrne znamko vozila, število prevoženih kilometrov, število sedežev in vrsto goriva
+    /**
+     * Javna metoda, ki vrne znamko vozila, število prevoženih kilometrov, število sedežev in vrsto goriva
+     * @param znamka znamka vozila
+     * @param prevozenih število prevoženih kilometrov
+     * @param sedezi število potniških sedežev
+     * @param vrstaGoriva vrsta goriva
+     */
     public MinibusVozilo(String znamka, int prevozenih, int sedezi, String vrstaGoriva) {
         this.znamka = znamka;
         this.prevozenih = prevozenih;
@@ -28,22 +34,39 @@ public class MinibusVozilo {
         this.vrstaGoriva = vrstaGoriva;
     }
 
-	// Javna metoda, ki vrne znamko vozila
+	
+    /**
+     * Javna metoda, ki vrne znamko vozila
+     * @return String getZnamka vrne znamko vozila
+     */
     public String getZnamka() {
         return znamka;
     }
 
-	// Javna metoda, ki vrne število prevoženih kilometrov
+	
+    /**
+     * Javna metoda, ki vrne število prevoženih kilometrov
+     * @return int getPrevozeno vrne število prevoženih kilometrov
+     */
     public int getPrevozeno() {
         return prevozenih;
     }
 
-	// Javna metoda, ki vrne število sedežev
+	
+    /**
+     * Javna metoda, ki vrne število sedežev
+     * @return int
+     */
     public int getSedezi() {
         return sedezi;
     }
 
-	// Javna metoda, ki vrne vrsto goriva
+	
+    
+    /**
+     * Javna metoda, ki vrne vrsto goriva
+     * @return String getVrstaGoriva vrne vrsto goriva
+     */
     public String getVrstaGoriva() {
         return vrstaGoriva;
     }

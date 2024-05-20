@@ -6,9 +6,8 @@
  *
  */
 
-// Uvozimo vse razrede in pakete za delo z V/I napravami, pripomočke, GUI, dogodke in tabele
-import java.util.*;
-import javax.swing.table.*;
+// Uvozimo vse razrede in pakete za delo s tabelami
+ import javax.swing.table.*;
 
 /**
  * Javni razred za strukturo tabele vozil
@@ -19,6 +18,7 @@ import javax.swing.table.*;
 public class TransportiTableModel extends DefaultTableModel {
 
     /** Javni konstruktor za ustvarjanje novega modela tabele osebnih vozil
+     * @param vehicleType vrsta vozila
      */
     public TransportiTableModel(String vehicleType) {
         super();

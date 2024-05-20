@@ -18,29 +18,106 @@ import javax.swing.table.JTableHeader;
  * @author Sebastjan Kreže
  * @version Vaja 35
  */
-
 public class Transporti extends JFrame implements ActionListener {
 
-	// Deklaracija zasebnih lastnosti
+	/**
+	 * Gumb Dodaj osebno vozilo
+	 */
 	private JButton dodajOsebnoButton;
+
+	/**
+	 * Gumb Dodaj minibus vozilo
+	 */
 	private JButton dodajMinibusButton;
+
+	/**
+	 * Gumb Dodaj tovorno vozilo
+	 */
 	private JButton dodajTovornoButton;
+
+	/**
+	 * Tekstovno polje za vnos znamke osebnega vozila
+	 */
 	private JTextField osebnoZnamkaVnos;
+
+	/**
+	 * Tekstovno polje za vnos prevoženih kilometrov osebnega vozila
+	 */
 	private JTextField osebnoPrevozenihVnos;
+
+	/**
+	 * Tekstovno polje za vnos znamke minibus vozila
+	 */
 	private JTextField minibusZnamkaVnos;
+
+	/**
+	 * Tekstovno polje za vnos števila prevoženih kilometrov minibus vozila
+	 */
 	private JTextField minibusPrevozenihVnos;
+
+	/**
+	 * Tekstovno polje za vnos števila potniških sedežev minibus vozila
+	 */
 	private JTextField minibusSedezevVnos;
+
+	/**
+	 * Tekstovno polje za vnos vrste goriva minibus vozila
+	 */
 	private JTextField minibusGorivoVnos;
+
+	/**
+	 * Tekstovno polje za vnos znamke tovornega vozila
+	 */
 	private JTextField tovornoZnamkaVnos;
+
+	/**
+	 * Tekstovno polje za vnos prevoženih kilometrov tovornega vozila
+	 */
 	private JTextField tovornoPrevozenihVnos;
+
+	/**
+	 * Tekstovno polje za vnos kapacitete tovornega vozila
+	 */
 	private JTextField tovornoKapacitetaVnos;
+
+	/**
+	 * Tekstovno polje za vnos nosilnosti tovornega vozila
+	 */
 	private JTextField tovornoNosilnostVnos;
+
+	/**
+	 * Tekstovno polje za vnos vrste goriva tovornega vozila
+	 */
 	private JTextField tovornoGorivoVnos;
+
+	/**
+	 * Tabela za prikaz osebnih vozil
+	 */
 	private JTable tabelaOsebna;
+
+	/**
+	 * Tabela za prikaz minibus vozil
+	 */
 	private JTable tabelaMinibus;
+
+	/**
+	 * Tabela za prikaz tovornih vozil
+	 */
 	private JTable tabelaTovorna;
+
+	/**
+	 * Model tabele za prikaz osebnih vozil
+	 */
 	private TransportiOsebniTableModel osebnaTabela;
+
+	/**
+	 * Model tabele za prikaz minibus vozil
+	 */
 	private TransportiMinibusTableModel minibusTabela;
+
+	/**
+	 * Model tabele za prikaz tovornih vozil
+	 */
 	private TransportiTovorniTableModel tovornaTabela;
 	
 	/** Javna statična metoda, ki se izvede ob zagonu programa
@@ -284,9 +361,4 @@ public class Transporti extends JFrame implements ActionListener {
 			tovornaTabela.addTovornoVozilo(tovornoVozilo);
 		}
 	}
-
-    // Add table headers
-    private void addTableHeaders() {
-
-    }
 }
